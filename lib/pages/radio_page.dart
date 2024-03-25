@@ -9,7 +9,7 @@ class RadioScreen extends StatefulWidget {
 }
 
 class _RadioScreenState extends State<RadioScreen> {
-  final videoUrl = "https://www.youtube.com/watch?v=2jsht_fTMNA";
+  final videoUrl = "https://www.youtube.com/watch?v=wTHwjqMGUjw&list=RDEM0_EcHKzMGzB89WQmdCeevQ&index=1";
 
   late YoutubePlayerController _controller;
 
@@ -40,6 +40,16 @@ class _RadioScreenState extends State<RadioScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(18),
+                child: Container(
+                  color: Colors.black,
+                  width: 500,
+                  height: 200,
+                  child: Image.asset("assets/logos/logo.jpg"),
+                ),
+              ),
+              const SizedBox(height: 18),
               ClipRRect(
                 borderRadius: BorderRadius.circular(16),
                 child: YoutubePlayer(
@@ -73,28 +83,34 @@ class _RadioScreenState extends State<RadioScreen> {
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Container(
-                      width: 100,
-                      height: 50,
-                      color: Colors.black,
-                      child: const Center(
-                          child: Text(
-                        'Sandeep Sulhan',
-                        style: TextStyle(color: Colors.white),
-                      )),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: Container(
+                        width: 100,
+                        height: 50,
+                        color: Colors.black,
+                        child: const Center(
+                            child: Text(
+                          'Sandeep Sulhan',
+                          style: TextStyle(color: Colors.white),
+                        )),
+                      ),
                     ),
                     const SizedBox(width: 4),
                     const Text('Pyaar Tenu karda Gabru'),
                     const SizedBox(width: 30),
-                    Container(
-                      width: 100,
-                      height: 50,
-                      color: Colors.black,
-                      child: const Center(
-                          child: Text(
-                        'Sandeep Sulhan',
-                        style: TextStyle(color: Colors.white),
-                      )),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: Container(
+                        width: 100,
+                        height: 50,
+                        color: Colors.black,
+                        child: const Center(
+                            child: Text(
+                          'Sandeep Sulhan',
+                          style: TextStyle(color: Colors.white),
+                        )),
+                      ),
                     ),
                     const SizedBox(width: 4),
                     const Text('Pyaar Tenu karda Gabru'),

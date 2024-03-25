@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
             label: 'Radio',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.schedule),
+            icon: Icon(Icons.calendar_month),
             label: 'Schedule',
           ),
           BottomNavigationBarItem(
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
             label: 'Updates',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.library_books),
+            icon: Icon(Icons.mic),
             label: 'Podcast',
           ),
           BottomNavigationBarItem(
